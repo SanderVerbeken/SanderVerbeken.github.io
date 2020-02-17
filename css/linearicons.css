@@ -139,10 +139,10 @@
 	content: "\e825";
 }
 .lnr-camera:before {
-	content: "\e826";
+	content: "\e83b";
 }
 .lnr-picture:before {
-	content: "\e827";
+	content: "\e84b";
 }
 .lnr-book:before {
 	content: "\e828";
@@ -202,13 +202,13 @@
 	content: "\e83a";
 }
 .lnr-tablet:before {
-	content: "\e83b";
+	content: "\e826";
 }
 .lnr-laptop:before {
 	content: "\e83c";
 }
 .lnr-laptop-phone:before {
-	content: "\e83d";
+	content: "\e842";
 }
 .lnr-power-switch:before {
 	content: "\e83e";
@@ -223,7 +223,7 @@
 	content: "\e841";
 }
 .lnr-pie-chart:before {
-	content: "\e842";
+	content: "\e83d";
 }
 .lnr-chart-bars:before {
 	content: "\e843";
@@ -250,7 +250,7 @@
 	content: "\e84a";
 }
 .lnr-rocket:before {
-	content: "\e84b";
+	content: "\e827";
 }
 .lnr-briefcase:before {
 	content: "\e84c";
