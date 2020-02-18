@@ -16,7 +16,6 @@
 			<link rel="stylesheet" href="css/font-awesome.min.css">
 			<link rel="stylesheet" href="css/bootstrap.css">
 			<link rel="stylesheet" href="css/magnific-popup.css">
-			<link rel="stylesheet" href="css/jquery-ui.css">				
 			<link rel="stylesheet" href="css/nice-select.css">							
 			<link rel="stylesheet" href="css/animate.min.css">
 			<link rel="stylesheet" href="css/owl.carousel.css">				
@@ -179,7 +178,7 @@
 				<div class="container">				
 					<div class="row">
 						<div class="col-lg-3 col-md-6 single-fact">
-							<h1 class="counter">2536</h1>
+							<h1 class="counter" id="firstcounter">25</h1>
 							<p>Projects Completed</p>
 						</div>
 						<div class="col-lg-3 col-md-6 single-fact">
@@ -647,6 +646,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 			<script src="js/simple-skillbar.js"></script>							
 			<script src="js/owl.carousel.min.js"></script>							
 			<script src="js/mail-script.js"></script>	
-			<script src="js/main.js"></script>	
+			<script src="js/main.js"></script>
+            <script>
+                console.log(document.getElementById("firstcounter").innerText);
+                document.getElementById("firstcounter").innerText = 100;
+                console.log(document.getElementById("firstcounter").innerText);
+            </script>
 		</body>
 	</html>
