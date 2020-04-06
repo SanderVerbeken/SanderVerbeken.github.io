@@ -1,0 +1,118 @@
+@charset "UTF-8";
+/*--------------------------------------------------------------*/
+*{
+    box-sizing: border-box;
+}
+html, body {
+    font-family: Georgia, serif;
+    min-width: 25em;
+    background-color: #f9f9f9;
+
+}
+header {
+    background: url("../images/bannerblack.png") no-repeat center;
+    background-size: auto;
+}
+header p{
+    min-height:5rem;
+    text-indent:100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+/* Test 2 navigatie */
+nav{
+    height: 5rem;
+}
+nav a{
+    text-decoration:none;
+}
+nav, nav ul {
+    width: 100%
+}
+nav ul {
+    background-color: rgba(105, 97, 28, 0.71);
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* alles achter elkaar, past het niet zet het eronder.*/
+    justify-content: space-evenly;
+    height:auto;
+}
+nav li {
+    padding:0.5em;
+    display: inline-block;
+    flex-direction: row;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 120%;
+}
+nav a:hover{
+    color: #6B8990;
+    transition: color 0.3s ease-in-out;
+}
+/*----------Alles hierboven is hetzelfde op elke pagina----------*/
+main a{
+    text-decoration: none;
+    color:#000;
+}
+footer a{
+    text-decoration: none;
+    color:#000;
+}
+footer {
+    margin-top:1rem;
+    padding:1rem;
+    line-height: 1.5rem;
+    background-color: rgba(105, 97, 28, 0.48);
+}
+h1 {
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 1rem;
+    line-height: 2rem;
+}
+article p{
+    padding: 1rem;
+    line-height: 1.2em;
+    font-family: "Bookman Old Style", serif;
+    font-size:1em;
+
+}
+article img{
+    display: block;
+    width: 60%;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 800px){
+    article div{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-auto-rows: 20em;
+
+    }
+    article img {
+        margin-top: 0;
+        max-height: 20em;
+        display: block;
+        width: auto;
+        margin-left: 5em;
+        margin-right:auto;
+
+    }
+    article p {
+        font-size: 1.2em;
+    }
+    h1{
+        font-size: 2.5em;
+    }
+
+}

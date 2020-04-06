@@ -1,0 +1,195 @@
+@charset "UTF-8";
+/*--------------------------------------------------------------*/
+*{
+    box-sizing: border-box;
+}
+html, body {
+    font-family: Georgia, serif;
+    min-width: 25em;
+    background-color: #f9f9f9;
+
+}
+header {
+    background: url("../images/bannerblack.png") no-repeat center;
+    background-size: auto;
+}
+h1{
+    min-height:5rem;
+    text-indent:100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+/* Test 2 navigatie */
+nav{
+    height: 5rem;
+}
+nav a{
+    text-decoration:none;
+}
+nav, nav ul {
+    width: 100%
+}
+nav ul {
+    background-color: rgba(105, 97, 28, 0.71);
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* alles achter elkaar, past het niet zet het eronder.*/
+    justify-content: space-evenly;
+    height:auto;
+}
+nav li {
+    padding:0.5em;
+    display: inline-block;
+    flex-direction: row;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 120%;
+}
+nav a:hover{
+    color: #6B8990;
+    transition: color 0.3s ease-in-out;
+}
+/*----------Alles hierboven is hetzelfde op elke pagina----------*/
+footer a{
+    text-decoration: none;
+    color:#000;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+aside{
+    margin:1.5rem;
+}
+aside p , aside h2{
+    font-weight: bold;
+    text-align: center;
+}
+aside section div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+aside section p{
+    padding:1em;
+    box-sizing: content-box;
+    border: solid #000000 0.1em;
+    text-align: center;
+}
+.frame{
+    display:block;
+    margin:0 auto;
+    width:100%;
+
+}
+
+.basis h2, .basis p {
+    margin:1em;
+}
+.logo {
+    justify-content: center;
+
+}
+.frame {
+    margin-top: 50%;
+}
+footer {
+    background-color: rgba(105, 97, 28, 0.56);
+    line-height: 1.5em;
+    padding-left:1em;
+    padding-bottom:1em;
+    padding-top: 1em;
+}
+footer span{
+    font-weight: bold;
+}
+.geschenken, .bloemen {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+h2, h2 a {
+    font-weight: bold;
+    font-size: 110%;
+    color: #000;
+    text-decoration: none;
+}
+.facebook {
+    margin-top: 1em;
+}
+
+main {
+
+    line-height:1.2em;
+    font-family: 'Archivo', sans-serif;;
+
+}
+
+main h2, main p{
+    margin-left: 1em;
+    line-height:1.5em;
+
+}
+main aside p{
+    margin-left:0;
+}
+main p{
+    padding-left:0.1em;
+}
+main a:hover{
+    color:#00b2ff;
+    transition: color 0.3s ease-in-out;
+}
+ @media screen and (min-width: 800px) {
+
+     main {
+         display: grid;
+         grid-template-columns: 2fr 0.5fr;
+         grid-column-gap: 1em;
+         grid-auto-rows: minmax(0, auto);
+         justify-content: center;
+     }
+
+     .logo {
+         grid-column: 1/3;
+         padding-right: 35%;
+         padding-left: 20%;
+     }
+     .basis {
+         display: grid;
+         grid-template-rows: 0.2fr 1fr 1fr;
+         grid-template-columns: 2fr 1fr;
+         row-gap: 1rem;
+     }
+     .geschenken, .bloemen{
+         min-width: 10rem;
+         min-height: auto;
+         width: 100%;
+         height: auto;
+         float: right;
+     }
+     article {
+         align-content: center;
+
+     }
+     .basis h2, .basis p {
+         margin-left:1em;
+     }
+
+ }
+@media screen and (min-width: 1200px) {
+    .logo {
+        background-color: #688998;
+    }
+
+}
+

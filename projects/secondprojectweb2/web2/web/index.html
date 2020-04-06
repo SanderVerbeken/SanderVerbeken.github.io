@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Index.jsp</title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/styleIndex.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" type="imaga/png" href="Images/smashball.png">
+</head>
+<body>
+<header>
+
+    <div>
+        <img class="background" alt="Smash bros ultimate custom list logo" src="Images/Logo.png">
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="VoegToe?command=home">Index</a></li>
+            <li><a href="VoegToe?command=overview">Catalogus</a></li>
+            <li><a href="VoegToe?command=addForm">Voeg Toe</a></li>
+            <li><a href="VoegToe?command=zoekPagina">Zoek</a></li>
+        </ul>
+
+    </nav>
+</header>
+<main>
+    <div>
+
+        <h2>This is only a preview of the first page. The links dont work!</h2>
+        <p>Beste bezoeker van deze website, ik verwelkom u aan uw toekomstige eigen gemaakte Smash Bros rooster. Wat is het doel van dit rooster? U maakt in dit rooster alle mogelijke characters aan die u kunt gebruiken in de volgende Smash game. Je kan hierdoor origineel worden met je eigen gemaakte roosters. Laat je gaan en heb plezier. </p>
+        <p>Ps: Er zijn automatisch vier characters al aanwezig in het rooster om te bewijzen dat dit rooster ook effectief werkt.</p>
+    </div>
+    <form method="post" action="VoegToe?command=quote">
+        <p>Do you want to see a quote?</p>
+        <p>
+
+            <input type="radio" value="yes" name="quote" id="quoteYes">
+            <label for="quoteYes">Yes</label>
+            <input type="radio" value="no" name="quote" id="quoteNo">
+            <label for="quoteNo">No</label>
+        </p>
+        <p><input type="submit" value="Send" id="submit"></p>
+    </form>
+
+    <img src="Images/gif.gif">
+
+
+
+</main>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+@charset "UTF-8";
+/*--------------------------------------------------------------*/
+html, body {
+    font-family: Georgia, serif;
+    min-width: 25em;
+    background-color: #f9f9f9;
+}
+header {
+    background: url("../images/bannerblack.png") no-repeat center;
+    background-size: auto;
+}
+header p{
+    min-height:5rem;
+    text-indent:100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+nav{
+    height: 5rem;
+}
+nav a{
+    text-decoration:none;
+}
+nav, nav ul {
+    width: 100%
+}
+nav ul {
+    background-color: rgba(105, 97, 28, 0.71);
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* alles achter elkaar, past het niet zet het eronder.*/
+    justify-content: space-evenly;
+    height:auto;
+}
+nav li {
+    padding:0.5em;
+    display: inline-block;
+    flex-direction: row;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 120%;
+}
+nav a:hover{
+    color: #6B8990;
+    transition: color 0.3s ease-in-out;
+}
+/*----------Alles hierboven is hetzelfde op elke pagina----------*/
+main a{
+    text-decoration: none;
+    color:#000;
+}
+.aside, h1{
+    font-family:'Archivo', sans-serif;
+    margin-left: 1em;
+    margin-right: 1em;
+
+}
+aside{
+    margin:1.5rem;
+}
+aside p , aside h2{
+    font-weight: bold;
+    text-align: center;
+}
+aside section div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+aside section h2{
+    margin-bottom: 1em;
+}
+aside section p{
+    padding:1em;
+    box-sizing: content-box;
+    border: solid #000000 0.1em;
+    text-align: center;
+}
+
+main .inhoud {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:1em;
+}
+article ul li {
+    padding: 1rem 1rem 1rem 1rem;
+    background-color: rgba(255, 255, 255, 0.71);
+
+}
+article ul{
+    display :grid;
+    grid-template-columns: 2fr;
+    grid-column-gap: 1em;
+    grid-auto-rows: minmax(0, auto);
+}
+article{
+    background: url(../images/biezeke.jpg) ,linear-gradient(to right, #000000, #000000);
+    background-size: 100%;
+    font-size: 110%;
+    border: solid #60828E 0.1em;
+}
+.map{
+    margin-left: 1em;
+
+}
+.forum{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    margin-left: 1em;
+
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+.forum h2 {
+    font-weight: bold;
+    font-size: 120%;
+    text-decoration: underline;
+    margin-bottom: 1em;
+
+}
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-size:1.5em;
+    margin-top: 1rem;
+}
+

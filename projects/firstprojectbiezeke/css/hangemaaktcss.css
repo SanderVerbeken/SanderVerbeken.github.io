@@ -1,0 +1,170 @@
+@charset "UTF-8";
+/*--------------------------------------------------------------*/
+*{
+    box-sizing: border-box;
+}
+html, body {
+    font-family: Georgia, serif;
+    min-width: 25em;
+    background-color: #f9f9f9;
+
+}
+header {
+    background: url("../images/bannerblack.png") no-repeat center;
+    background-size: auto;
+}
+header p{
+    min-height:5rem;
+    text-indent:100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+/* Test 2 navigatie */
+nav{
+    height: 5rem;
+}
+nav a{
+    text-decoration:none;
+}
+nav, nav ul {
+    width: 100%
+}
+nav ul {
+    background-color: rgba(105, 97, 28, 0.71);
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* alles achter elkaar, past het niet zet het eronder.*/
+    justify-content: space-evenly;
+    height:auto;
+}
+nav li {
+    padding:0.5em;
+    display: inline-block;
+    flex-direction: row;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 120%;
+}
+nav a:hover{
+    color: #6B8990;
+    transition: color 0.3s ease-in-out;
+}
+/*----------Alles hierboven is hetzelfde op elke pagina----------*/
+main a{
+    text-decoration: none;
+    color:#000;
+}
+footer a{
+    text-decoration: none;
+    color:#000;
+}
+main{
+    line-height:1.2em;
+    font-family: 'Archivo', sans-serif;
+    text-decoration: none;
+    color: #000;
+}
+aside{
+    margin:1.5rem;
+}
+aside h2{
+    margin-bottom:1em;
+    font-size:1.5em;
+
+}
+aside h3{
+    margin:1rem;
+}
+aside p , aside h2, aside h3{
+    font-weight: bold;
+    text-align: center;
+}
+aside section div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+aside section p{
+    padding:1em;
+    box-sizing: content-box;
+    border: solid #000000 0.1em;
+    text-align: center;
+}
+.frame{
+    display:block;
+    margin:0 auto;
+    width:100%;
+
+}
+footer {
+    margin-top:1rem;
+    padding:1rem;
+    line-height: 1.5rem;
+    background-color: rgba(105, 97, 28, 0.48);
+}
+h1{
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    padding:1rem;
+    line-height: 2rem;
+}
+article img{
+    display: block;
+    width: 70%;
+    margin-left:auto;
+    margin-right:auto;
+}
+article section div h2, article section div p{
+    margin-left:1em;
+    margin-bottom: 1rem;
+    margin-right:1em;
+}
+article section div h2{
+    margin:1em;
+    font-weight:bold;
+}
+@media screen and (min-width: 800px){
+    article section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: minmax(0, auto);
+        justify-content: center;
+    }
+    article section h2{
+        font-size:1.3em;
+    }
+    article section img{
+        width:50%;
+        margin-left: auto;
+        margin-right:auto;
+        margin-top:3rem;
+        padding-bottom: 2rem;
+    }
+    .first, .second{
+        background-color: rgba(104, 137, 152, 0.48);
+    }
+    .first p, .second p{
+        font-size: 1.1em;
+    }
+}
+@media screen and (min-width: 1200px){
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-auto-rows: minmax(0, auto);
+        margin-left:1em;
+    }
+    h1{
+        font-weight: bold;
+        font-size: 2.5em;
+        text-align: center;
+        padding:1rem;
+        line-height: 2rem;
+    }
+}
