@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/sample.css">
+</head>
+
+<body>
+<header role="banner">
+    <img alt="No mans sky" src="images/No-Mans-Sky-Xbox-One-1.jpg">
+    <h1><span>Chat App</span></h1>
+    <nav>
+        <ul>
+            <c:choose>
+                <c:when test="${param.title=='Home'}">
+                    <li  id="actual"><a href="Controller">Home</a></li>
+                </c:when>
+                <c:otherwise>
+                    <li><a href="Controller">Home</a></li>
+                </c:otherwise>
+            </c:choose>
+            <c:if test="${user != null}">
+                <li><a href="Controller?action=ChatPage">Chat</a></li>
+            </c:if>
+
+        </ul>
+    </nav>
+    <h2>
+        Dit is een preview, de website zelf werkt niet!
+    </h2>
+
+</header>
+<main>
+    <c:if test="${errors.size()>0 }">
+        <div class="danger">
+            <ul>
+                <c:forEach var="error" items="${errors }">
+                    <li>${error }</li>
+                </c:forEach>
+            </ul>
+        </div>
+    </c:if> <c:choose>
+    <c:when test="${user!=null}">
+        <p>Welcome ${user.getFirstName()}!</p>
+        <form method="post" action="Controller?action=LogOut">
+            <p>
+                <input type="submit" id="logoutbutton" value="Log Out">
+            </p>
+        </form>
+    </c:when>
+    <c:otherwise>
+        <form method="post" action="Controller?action=LogIn">
+            <p>
+                <label for="email">Your email </label>
+                <input type="text" id="email" name="email" value="jan@ucll.be">
+            </p>
+            <p>
+                <label for="password">Your password</label>
+                <input type="password" id="password" name="password" value="t">
+            </p>
+            <p>
+                <input type="submit" id="loginbutton" value="Log in">
+            </p>
+        </form>
+    </c:otherwise>
+</c:choose>
+    <h3>Blog:</h3>
+    <div id="topic1">
+        <h3>Als je kon reizen door de ruimte, waar zou je naartoe gaan?</h3>
+        <input type="text" id="nametopic1" placeholder="Enter name here" />
+        <input type="text" id="messagetopic1" placeholder="Enter comment here"/>
+        <input type="number" id="ratingtopic1" placeholder="0" min="0" max="10"/>
+        <button type="button" onclick="send('topic1');" >Send</button>
+        <div id="messagestopic1"></div>
+    </div>
+
+
+    <div id="topic2">
+        <h3>Als je een ster een naam kon geven, welke naam zou je kiezen?</h3>
+        <input type="text" id="nametopic2" placeholder="Enter name here" />
+        <input type="text" id="messagetopic2" placeholder="Enter comment here"/>
+        <input type="number" id="ratingtopic2" placeholder="0" min="0" max="10"/>
+        <button type="button" onclick="send('topic2');" >Send</button>
+        <div id="messagestopic2"></div>
+    </div>
+
+    <div id="topic3">
+        <h3>Op welke planeet zou je willen leven?</h3>
+        <input type="text" id="nametopic3" placeholder="Enter name here" />
+        <input type="text" id="messagetopic3" placeholder="Enter comment here"/>
+        <input type="number" id="ratingtopic3" placeholder="0" min="0" max="10"/>
+        <button type="button" onclick="send('topic3');" >Send</button>
+        <div id="messagestopic3"></div>
+    </div>
+
+    <div id="topic4">
+        <h3>Wat zou je wensen als je een vallende ster ziet?</h3>
+        <input type="text" id="nametopic4" placeholder="Enter name here" />
+        <input type="text" id="messagetopic4" placeholder="Enter comment here"/>
+        <input type="number" id="ratingtopic4" placeholder="0" min="0" max="10"/>
+        <button type="button" onclick="send('topic4');" >Send</button>
+        <div id="messagestopic4"></div>
+    </div>
+
+    <div id="topic5">
+        <h3>Wat denk jij dat een zwart gat is?</h3>
+        <input type="text" id="nametopic5" placeholder="Enter name here" />
+        <input type="text" id="messagetopic5" placeholder="Enter comment here"/>
+        <input type="number" id="ratingtopic5" placeholder="0" min="0" max="10"/>
+        <button type="button" onclick="send('topic5');" >Send</button>
+        <div id="messagestopic5"></div>
+    </div>
+
+    <button type="button" onclick="closeSocket();" >Close connection</button>
+
+
+</main>
+
+<footer>
+	<span class="right"> UCLL, Sander Verbeken r0747326 2TI/7SN
+	</span>
+</footer>
+
+<script src="js/BlogScript.js"></script>
+</body>
+</html>
