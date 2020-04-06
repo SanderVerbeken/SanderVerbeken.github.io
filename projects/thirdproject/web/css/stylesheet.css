@@ -1,0 +1,126 @@
+body {
+
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1500px;
+    font-family: Palatino, URW Palladio L, serif;
+}
+main{
+
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-color: rgba(253, 244, 255, 0.48);
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 1.2rem;
+    border-top: black solid;
+    border-bottom: black solid;
+    background-image: url("../img/background.png");
+}
+nav ul li {
+
+    color: black;
+    font-weight: bold;
+    font-size: 1.4rem;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    transition: all .2s ease-in-out;
+}
+nav ul li a:hover{
+    font-size:2rem;
+    color: #df0005;
+
+    transform: scale(1.1);
+}
+
+main h2{
+    text-align: center;
+    text-decoration: underline;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    font-size: 2.1rem;
+    font-weight: bold;
+    background-color: red;
+}
+main p{
+    text-align:center;
+
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+}
+footer{
+
+
+
+
+    width:100%;
+
+
+    border-bottom: black solid;
+
+
+}
+footer p{
+    padding-top: 1.2rem;
+    padding-left: 1rem;
+    font-size: 1.1rem;
+    padding-bottom: 0.5rem;
+    background-color: rgba(255, 0, 156, 0.27);
+
+}
+.sub{
+    display:block;
+    margin:auto;
+}
+.catalogus {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.84);
+}
+
+.catalogus td, .catalogus th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+.catalogus tr:nth-child(even){background-color: #b7b7b7;}
+
+.catalogus tr:hover {background-color: #ddd;}
+
+.catalogus th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgba(252, 0, 0, 0.68);
+    color: white;
+}
+.voegtoe footer{
+    position: absolute;
+    bottom: 0px;
+}
+.fixed footer{
+    position: absolute;
+    bottom: 0px;
+}
+
+
+.Sander main h2{
+    text-align: center;
+    text-decoration: underline;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    font-size: 2.1rem;
+    font-weight: bold;
+}

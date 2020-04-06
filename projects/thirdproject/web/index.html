@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Beheeraplicatie woordenlijst</title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css" >
+    <link href="css/stylesheet.css" rel="stylesheet" type="text/css" >
+
+
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="Servlet?command=home">Homepagina</a></li>
+            <li><a href="Servlet?command=overzicht">Woordenlijst</a></li>
+            <li><a href="woordToevoegen.jsp">Voeg Woord Toe</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <h2>This is only a preview of the first page. The links dont work!</h2>
+    <p>Met deze applicatie kan je de woordenlijst beheren om in het spelletje hangman te gebruiken</p>
+    <form action="Servlet" method="get">
+        <a href="Servlet?command=download"> Download woordenlijst</a>.
+    </form>
+
+    <p> langstewoord : <%=langstewoord%></p>
+    <br>
+    <p> korstewoord : <%=korstewoord%></p>
+    <br>
+    <p> aantalwoorden : <%=aantalwoorden%></p>
+
+</main>
+<div class="fixed">
+    <footer>
+
+        <a href="https://www.youtube.com/user/PewDiePie"> <img src="img/sub.png"></a>
+        <p>Hangman</p>
+        <p>Rob + Sebastiaan+ Woutte + Raf + Arnoud + Sander</p>
+
+        <br>
+        <p>Met veel liefde gemaakt door groep 8</p>
+        <p>PS: Wij hebben een eervolle vermelding gekregen voor beste inzet aka beste groep.</p>
+
+        <script language="JavaScript">
+            <!--
+            document.write('&copy;' );
+            document.write(' Subscribe to Pewdiepie - Groep 8');
+            document.write('  2019 - ');
+            document.write(new Date().getFullYear());
+            //-->
+        </script>
+    </footer>
+</div>
+</body>
+</html>
